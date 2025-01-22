@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    button {
+        padding: 50px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .urna {
+        margin: auto;
+        width: 50%;
+        background-color: rgb(202, 202, 202);
+        padding: 30px;
+    }
+
+    .monitor {
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-bottom: 5%;
+    }
+
+    .numeros {
+        margin: auto;
+        width: 50%;
+    }
+
+    .opcoes {}
+
+    #bDez {
+        margin-left: 30%;
+    }
+
+    #bVotar {
+        background-color: rgb(0, 255, 0);
+    }
+
+    #bApagar {
+        background-color: rgb(255, 0, 0);
+    }
+
+    #bBranco {
+        background-color: rgb(255, 255, 255);
+    }
+</style>
+
+<body>
+    <div class="urna">
+        <h1>Urna Eletrônica</h1>
+        <div class="monitor">
+            <p id="numeroMonitor"></p>
+        </div>
+        <div class="numeros">
+            <button type="button" id="bUm" onclick="clicouUm()">1</button>
+            <button type="button" id="bDois" onclick="clicouDois()">2</button>
+            <button type="button" id="bTres" onclick="clicouTres()">3</button><br>
+            <button type="button" id="bQuatro" onclick="clicouQuatro()">4</button>
+            <button type="button" id="bCinco" onclick="clicouCinco()">5</button>
+            <button type="button" id="bSeis" onclick="clicouSeis()">6</button><br>
+            <button type="button" id="bSete" onclick="clicouSete()">7</button>
+            <button type="button" id="bOito" onclick="clicouOito()">8</button>
+            <button type="button" id="bNove" onclick="clicouNove()">9</button><br>
+            <button type="button" id="bDez" onclick="clicouDez()">0</button>
+        </div>
+        <div class="opcoes">
+            <button type="button" id="bVotar">Votar</button>
+            <button type="button" id="bApagar">Apagar</button>
+            <button type="button" id="bBranco">Branco</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
