@@ -1,13 +1,15 @@
-function parOuImpar() {
-    var n = parseInt(document.getElementById("n").value);
+function financiamento() {
+    let s = parseInt(document.getElementById("s").value);
+    let f = parseInt(document.getElementById("f").value);
 
-    if (n <= 0) {
-        alert("Esse número não é positivo.");
-    } else {
-        if (n % 2 === 1) {
-            alert("Número ímpar.");
+    if (isNaN(s) || isNaN(f)) {
+        alert("Por favor digite um número.");
+    }
+    else {
+        if (f <= s * 5) {
+            alert("Financiamento concedido.");
         } else {
-            alert("Número par.");
+            alert("Financiamento negado.");
         }
     }
 }
