@@ -1,15 +1,21 @@
-function financiamento() {
-    let s = parseInt(document.getElementById("s").value);
-    let f = parseInt(document.getElementById("f").value);
+const readline = require('readline');
 
-    if (isNaN(s) || isNaN(f)) {
-        alert("Por favor digite um número.");
-    }
-    else {
-        if (f <= s * 5) {
-            alert("Financiamento concedido.");
-        } else {
-            alert("Financiamento negado.");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Digite um número inteiro: ', (input) => {
+    const n = parseInt(input, 10); 
+
+    if (!isNaN(n)) { 
+        console.log(`Tabuada do ${n}:`);
+        for (let i = 1; i <= 10; i++) {
+            console.log(`${n} x ${i} = ${n * i}`);
         }
+    } else {
+        console.log('Entrada inválida! Digite um número inteiro.');
     }
-}
+
+    rl.close();
+});
