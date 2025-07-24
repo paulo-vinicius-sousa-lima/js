@@ -1,5 +1,42 @@
+/*
+
+// Exercício do fatorial
+
+function fatorial(n) {
+    if (n === 0 || n === 1) return 1;
+
+    let resultado = 1;
+    for (let i = 2; i <= n; i++) {
+        resultado *= i;
+    }
+    return resultado;
+}
+
 const readline = require('readline');
 
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Digite um número: ", function(num) {
+    num = parseInt(num); 
+    if (isNaN(num) || num < 0) {
+        console.log("Por favor, digite um número inteiro não negativo.");
+    } else {
+        const fat = fatorial(num);
+        console.log(`O fatorial de ${num} é: ${fat}`);
+    }
+    rl.close();
+});
+
+*/
+
+/*
+
+// EXERCÍCIO DA TABUADA
+
+const readline = require('readline');
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -19,3 +56,5 @@ rl.question('Digite um número inteiro: ', (input) => {
 
     rl.close();
 });
+
+*/
