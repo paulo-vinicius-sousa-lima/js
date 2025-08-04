@@ -1,13 +1,8 @@
-var nome = new Array(5);
+var array = new Array(10);
 
-nome[0] = "P";
-nome[1] = "a";
-nome[2] = "u";
-nome[3] = "l";
-nome[4] = "o";
-
-for(var i = 0; i < 5; i++){
-    console.log(nome[i]);
+for(var i = 0; i < 10; i++){
+    array[i] = i;
+    console.log("Na posição " + i + " temos o valor: " + array[i]);
 }
 
 
@@ -40,6 +35,28 @@ for(var i = 0; i < 5; i++){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*var nome = new Array(5);
+
+nome[0] = "P";
+nome[1] = "a";
+nome[2] = "u";
+nome[3] = "l";
+nome[4] = "o";
+
+for(var i = 0; i < 5; i++){
+    console.log(nome[i]);
+}*\
 
 /*
 
