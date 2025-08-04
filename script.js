@@ -1,50 +1,46 @@
-var array = new Array(10);
+var vetor = new Array(20);
+
+console.log("O tamanho desse vetor é " + vetor.length);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Array com números aleatórios
+
+/* var array = new Array(10);
 
 for(var i = 0; i < 10; i++){
     array[i] = Math.floor(Math.random() * 10);
     console.log("Na posição " + i + " temos o valor: " + array[i]);
 }
+*\
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Array Simples
 
 /*var nome = new Array(5);
 
