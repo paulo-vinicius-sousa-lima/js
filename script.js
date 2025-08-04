@@ -1,7 +1,7 @@
 var array = new Array(10);
 
 for(var i = 0; i < 10; i++){
-    array[i] = i;
+    array[i] = Math.floor(Math.random() * 10);
     console.log("Na posição " + i + " temos o valor: " + array[i]);
 }
 
