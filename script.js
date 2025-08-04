@@ -5,10 +5,23 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question("Digite seu nome: ", function(nome) {
-  console.log("Olá, " + nome + "!");
-  rl.close();
-});
+let vetor = new Array(5);
+let i = 0;
+
+function perguntar() {
+  if (i < 5) {
+    rl.question(`Valor da posição [${i}]: `, function(valor) {
+      vetor[i] = valor;
+      i++;
+      perguntar();
+    });
+  } else {
+    rl.close();
+    console.log("Vetor preenchido:", vetor);
+  }
+}
+
+perguntar();
 
 
 
