@@ -1,3 +1,46 @@
+var nome = new Array(5);
+
+nome[0] = "P";
+nome[1] = "a";
+nome[2] = "u";
+nome[3] = "l";
+nome[4] = "o";
+
+for(var i = 0; i < 5; i++){
+    console.log(nome[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 // Exercício do fatorial
