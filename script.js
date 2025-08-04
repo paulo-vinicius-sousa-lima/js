@@ -1,3 +1,49 @@
+const readline = require('readline-sync');
+
+let linhas = 3;
+let colunas = 3; 
+let matriz = [];
+
+for (let i = 0; i < linhas; i++) {
+  matriz[i] = []; 
+  matriz[i][0] = readline.question(`Nome do aluno ${i + 1}: `);
+  for (let j = 1; j < colunas; j++) {
+    matriz[i][j] = parseFloat(readline.question(`Nota ${j} do aluno ${matriz[i][0]}: `));
+  }
+}
+
+console.table(matriz);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Vetor interativo via terminal
+
+/* 
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -22,32 +68,7 @@ function perguntar() {
 }
 
 perguntar();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*\
 
 // Length
 
