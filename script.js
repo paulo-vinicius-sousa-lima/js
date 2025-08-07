@@ -1,4 +1,61 @@
 const readline = require('readline-sync');
+let salarios = [];
+
+for (let i = 0; i < 4; i++) {
+  let salario = Number(readline.question(`Salário do professor [${i}]: `));
+  salarios.push(salario);
+}
+
+for (let i = 0; i < salarios.length - 1; i++) {
+  for (let j = 0; j < salarios.length - 1 - i; j++) {
+    if (salarios[j] < salarios[j + 1]) {
+      let temp = salarios[j];
+      salarios[j] = salarios[j + 1];
+      salarios[j + 1] = temp;
+    }
+  }
+}
+
+console.log("Salários ordenados (maior → menor):", salarios);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// READLINE SYNC
+
+/*
+
+const readline = require('readline-sync');
 
 let linhas = 3;
 let colunas = 3; 
@@ -14,32 +71,7 @@ for (let i = 0; i < linhas; i++) {
 
 console.table(matriz);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*\
 
 // Vetor interativo via terminal
 
